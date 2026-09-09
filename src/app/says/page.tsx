@@ -1,0 +1,5 @@
+import { loadDemoContent } from "@/lib/content";
+import { SaysPageAnimationEffect } from "@/components/says-page-animation-effect";
+export const metadata = { title: "一言" };
+function displayDate(value: string) { const [y, m, d] = value.split("-"); return `${y}年${m}月${d}日`; }
+export default function SaysPage() { const { says } = loadDemoContent(); const cols = [says.filter((_, i) => i % 2 === 0), says.filter((_, i) => i % 2 === 1)]; return <><header className="confirmed-page-intro"><p>QUOTES</p><h1>一言</h1><div>公开版原创短句。</div></header><section className="confirmed-quote-masonry" aria-label="原创短句收藏">{cols.map((column, col) => <div className="says-masonry-col" key={col}>{column.map((saying, index) => { const n = index * 2 + col; return <blockquote key={saying.body}><span aria-hidden="true">&quot;</span><p>{saying.body}</p><footer><time dateTime={saying.collectedDate}>{displayDate(saying.collectedDate)}</time><cite>出自 {saying.author ? `${saying.author} ` : ""}{saying.source ? `《${saying.source}》` : ""}</cite></footer><small>{String(n + 1).padStart(2, "0")}</small></blockquote>; })}</div>)}</section><SaysPageAnimationEffect /></>; }

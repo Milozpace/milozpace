@@ -1,0 +1,11 @@
+[data-says-variant] .confirmed-page-intro > div { display: none; }
+[data-says-variant] .confirmed-page-intro { min-height: clamp(8rem, 16vw, 12rem); border-bottom: 0; }
+[data-says-variant="says-grid-sorted"] .confirmed-quote-masonry { display: flex; gap: 1rem; padding: 4rem 0 7rem; }
+[data-says-variant="says-grid-sorted"] .says-masonry-col { flex: 1; min-width: 0; }
+.confirmed-quote-masonry blockquote { position:relative; break-inside:avoid; margin:0 0 1rem; padding:1.8rem; border:1px solid var(--confirmed-line); border-radius:.8rem; background:color-mix(in srgb,var(--confirmed-surface) 82%,transparent); box-shadow:0 12px 34px rgba(35,35,31,.035); }
+.confirmed-quote-masonry blockquote > span { display:block; height:1.3rem; color:var(--confirmed-accent); font-family:Georgia,serif; font-size:2.3rem; opacity:.45; }
+.confirmed-quote-masonry blockquote > p { margin:.7rem 0 0; font-family:"Songti SC","STSong","Noto Serif CJK SC",serif; font-size:1rem; line-height:1.9; }
+.confirmed-quote-masonry footer { display:flex; justify-content:space-between; gap:1rem; margin-top:1.4rem; color:var(--confirmed-faint); font-size:.7rem; }
+.confirmed-quote-masonry cite { font-style: normal; text-align: right; }
+.confirmed-quote-masonry blockquote > small { position:absolute; right:1.2rem; bottom:.6rem; color:var(--confirmed-line); font-family:Georgia,serif; }
+@media (max-width: 640px) { [data-says-variant="says-grid-sorted"] .confirmed-quote-masonry { flex-direction: column; } .confirmed-quote-masonry blockquote { padding: 1.5rem; } }

@@ -1,0 +1,8 @@
+[
+  { "displayDate": "2026-08-30", "kind": "photo", "body": "晚霞正好落进房间。", "image": "/demo/evening-field.svg", "imageAlt": "暖色天空与深色原野组成的原创抽象插画", "aspect": "landscape" },
+  { "displayDate": "2026-08-18", "kind": "text", "body": "一本书暂时停在中间，不急着完成，先让几句话留在身边。" },
+  { "displayDate": "2026-08-06", "kind": "text", "body": "骑车经过树荫时，风把整条街的声音压低了一瞬。" },
+  { "displayDate": "2026-07-29", "kind": "photo", "body": "雨后的河岸比平时更深。", "image": "/demo/after-rain.svg", "imageAlt": "雨后河岸、云层与灯光组成的原创抽象插画", "aspect": "portrait" },
+  { "displayDate": "2026-07-11", "kind": "text", "body": "删掉多余的装饰，让页面重新安静下来。" },
+  { "displayDate": "2026-06-21", "kind": "text", "body": "白昼很长，适合把没有读完的章节带到窗边。" }
+]

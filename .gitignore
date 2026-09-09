@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+coverage/
+artifacts/
+playwright-report/
+test-results/
+.playwright-cli/
+*.tsbuildinfo
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db

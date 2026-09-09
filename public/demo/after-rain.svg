@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">雨停以后</title><desc id="desc">雨后河岸与云层组成的抽象画面</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#75828b"/><stop offset=".62" stop-color="#d5b59a"/><stop offset="1" stop-color="#50636a"/></linearGradient></defs>
+  <rect width="1200" height="720" fill="url(#g)"/><path d="M0 470c180-42 280 30 450-8s300-4 420 30 210-20 330-10v238H0z" fill="#314b45"/>
+  <path d="M0 555c250-58 420 65 650 5s390 40 550 2v158H0z" fill="#597078" opacity=".9"/>
+  <g fill="#e7c28e"><circle cx="870" cy="455" r="8"/><path d="M866 470h8v105h-8z"/></g>
+  <g fill="none" stroke="#e4edf0" stroke-width="4" opacity=".38"><path d="m120 70-30 100M260 20l-36 130M1010 45l-24 90"/></g>
+</svg>

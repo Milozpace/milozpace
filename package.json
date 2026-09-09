@@ -1,0 +1,36 @@
+{
+  "name": "milozpace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "preview": "node scripts/preview.mjs",
+    "check": "tsc --noEmit && eslint .",
+    "test": "vitest run",
+    "test:e2e": "npm run build && playwright test",
+    "release:check": "tsx scripts/release-check.ts"
+  },
+  "dependencies": {
+    "github-slugger": "^2.0.0",
+    "gray-matter": "^4.0.3",
+    "next": "16.3.4",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "motion": "12.42.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "16.3.4",
+    "tsx": "^4.21.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.9"
+  }
+}

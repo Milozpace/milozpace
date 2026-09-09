@@ -1,0 +1,22 @@
+@import "../styles/shell.css";
+@import "../styles/home-shell.css";
+@import "../styles/nav.css";
+@import "../styles/home.css";
+@import "../styles/notes.css";
+@import "../styles/life.css";
+@import "../styles/says.css";
+@import "../styles/about.css";
+@import "../styles/about-motion.css";
+@import "../styles/reader.css";
+
+* { box-sizing: border-box; }
+html { min-width:0; scroll-behavior:smooth; background:var(--canvas); }
+body { position:relative; isolation:isolate; min-width:0; margin:0; overflow-x:clip; color:var(--ink); background:var(--canvas); font-family:var(--sans); font-size:16px; line-height:1.7; transition:background-color 180ms ease,color 180ms ease; }
+button, input, select, textarea { font: inherit; }
+a { color: inherit; }
+img { max-width: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

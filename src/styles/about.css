@@ -1,0 +1,23 @@
+.confirmed-about-v3--pocket-note-fine-sig-swash { display:grid; place-items:center; min-height:clamp(34rem,62vw,44rem); padding-block:clamp(3rem,8vw,7rem); }
+.confirmed-about-note,.confirmed-about-note ul,.confirmed-about-note dl { margin:0; padding:0; list-style:none; }
+.confirmed-about-note {
+  --note-paper:color-mix(in srgb,var(--confirmed-surface) 96%,#fffaf1); --note-paper-edge:color-mix(in srgb,var(--confirmed-accent) 18%,var(--confirmed-line));
+  --note-paper-ink:color-mix(in srgb,var(--confirmed-ink) 88%,#5b403c); --note-paper-muted:color-mix(in srgb,var(--confirmed-muted) 78%,var(--confirmed-accent));
+  --note-paper-wash:color-mix(in srgb,var(--confirmed-accent-soft) 46%,transparent); --note-paper-shadow:color-mix(in srgb,var(--confirmed-ink) 9%,transparent);
+  position:relative; width:min(100%,30rem); padding:clamp(2.1rem,5vw,3.2rem); border:1px solid var(--note-paper-edge); border-radius:1.4rem;
+  background:radial-gradient(circle at 16% 12%,var(--note-paper-wash),transparent 32%),linear-gradient(155deg,var(--note-paper),color-mix(in srgb,var(--note-paper) 82%,var(--confirmed-canvas)));
+  box-shadow:0 2rem 5.5rem var(--note-paper-shadow); color:var(--note-paper-ink); transform:rotate(-0.4deg);
+}
+html[data-theme="dark"] .confirmed-about-note { --note-paper:color-mix(in srgb,var(--confirmed-surface) 76%,#f4eadb); --note-paper-edge:color-mix(in srgb,var(--confirmed-accent) 26%,var(--confirmed-line)); --note-paper-ink:color-mix(in srgb,var(--confirmed-ink) 78%,#2d2524); --note-paper-muted:color-mix(in srgb,var(--confirmed-muted) 72%,#d7b9ad); --note-paper-wash:color-mix(in srgb,var(--confirmed-accent) 12%,transparent); --note-paper-shadow:rgba(0,0,0,.28); }
+.confirmed-about-note::after { content:""; position:absolute; inset:.8rem; border:1px solid color-mix(in srgb,var(--note-paper-edge) 72%,transparent); border-radius:1rem; pointer-events:none; }
+.confirmed-about-note-pin { position:absolute; top:1.15rem; right:1.35rem; width:.7rem; height:.7rem; border-radius:50%; background:var(--confirmed-accent); opacity:.72; }
+.confirmed-about-note-name { position:relative; z-index:1; margin:0; color:color-mix(in srgb,var(--confirmed-accent) 78%,var(--note-paper-ink)); font-family:"Alex Brush","Segoe Script",cursive; font-size:clamp(3rem,9vw,4.9rem); font-weight:400; letter-spacing:-.01em; line-height:.94; }
+.confirmed-about-note-facts { position:relative; z-index:1; display:grid; gap:.7rem; margin-top:clamp(1.5rem,4vw,2.35rem)!important; }
+.confirmed-about-note-facts div { display:grid; grid-template-columns:4.8rem 1fr; align-items:baseline; gap:1rem; }
+.confirmed-about-note-facts dt { color:var(--note-paper-muted); font-family:"Segoe UI","Yu Gothic UI","PingFang SC",sans-serif; font-size:.74rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; }
+.confirmed-about-note-facts dd { margin:0; color:var(--note-paper-ink); font-family:"Kaiti SC","STKaiti","KaiTi","Yu Mincho",serif; font-size:clamp(1.1rem,2.65vw,1.38rem); letter-spacing:.08em; }
+.confirmed-about-note--fine-sig-swash .confirmed-about-note-facts dd { font-family:"Bradley Hand ITC","Segoe Print","Kaiti SC",cursive; font-weight:400; letter-spacing:.015em; }
+.confirmed-about-note--fine-sig-swash .confirmed-about-note-value--chinese { font-family:"Kaiti SC","STKaiti","KaiTi","Yu Mincho",serif; letter-spacing:.08em; }
+.confirmed-about-note-tags { position:relative; z-index:1; display:flex; flex-wrap:wrap; gap:.55rem; margin-top:clamp(1.6rem,4vw,2.35rem)!important; }
+.confirmed-about-note-tags li { padding:.32rem .62rem; border:1px solid color-mix(in srgb,var(--note-paper-edge) 64%,transparent); border-radius:999px; background:color-mix(in srgb,var(--note-paper-wash) 58%,transparent); color:color-mix(in srgb,var(--note-paper-ink) 76%,var(--confirmed-accent)); font-size:.86rem; letter-spacing:.04em; }
+@media (max-width:700px) { .confirmed-about-v3--pocket-note-fine-sig-swash { min-height:clamp(30rem,120vw,38rem); padding-block:clamp(2rem,8vw,4rem); } .confirmed-about-note { transform:none; } .confirmed-about-note-facts div { grid-template-columns:4.2rem 1fr; } }

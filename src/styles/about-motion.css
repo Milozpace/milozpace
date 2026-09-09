@@ -1,0 +1,12 @@
+[data-about-motion="signature-reveal"] { min-height:calc(100svh - 4.25rem); padding-block:0; }
+.confirmed-site:has([data-about-motion="signature-reveal"]) .confirmed-footer { display:none; }
+@keyframes about-card-fade { from { opacity:0; transform:translateY(8px) rotate(-.4deg); } to { opacity:1; transform:translateY(0) rotate(-.4deg); } }
+@keyframes about-signature-appear { 0% { opacity:0; filter:blur(6px); transform:translateY(3px); } 60% { filter:blur(1.5px); } 100% { opacity:1; filter:blur(0); transform:translateY(0); } }
+@keyframes about-info-appear { from { opacity:0; filter:blur(3px); transform:translateY(4px); } to { opacity:1; filter:blur(0); transform:translateY(0); } }
+[data-about-motion="signature-reveal"] .confirmed-about-note { opacity:0; animation:about-card-fade .5s cubic-bezier(.22,.61,.36,1) forwards; }
+[data-about-motion="signature-reveal"] .confirmed-about-note-pin { opacity:0; animation:about-info-appear .35s cubic-bezier(.22,.61,.36,1) .2s forwards; }
+[data-about-motion="signature-reveal"] .confirmed-about-note-name { opacity:0; animation:about-signature-appear .8s cubic-bezier(.22,.61,.36,1) .3s forwards; }
+[data-about-motion="signature-reveal"] .confirmed-about-note-facts { opacity:0; animation:about-info-appear .45s cubic-bezier(.22,.61,.36,1) .85s forwards; }
+[data-about-motion="signature-reveal"] .confirmed-about-note-tags { opacity:0; animation:about-info-appear .4s cubic-bezier(.22,.61,.36,1) 1.05s forwards; }
+@media (prefers-reduced-motion:reduce) { [data-about-motion="signature-reveal"] .confirmed-about-note,[data-about-motion="signature-reveal"] .confirmed-about-note-pin,[data-about-motion="signature-reveal"] .confirmed-about-note-name,[data-about-motion="signature-reveal"] .confirmed-about-note-facts,[data-about-motion="signature-reveal"] .confirmed-about-note-tags { animation:none; opacity:1; transform:none; filter:none; } }
+@media (max-width:700px) { [data-about-motion="signature-reveal"] { min-height:calc(100svh - 3.75rem); } [data-about-motion="signature-reveal"] .confirmed-about-note-name { animation-duration:.5s; animation-delay:.2s; } [data-about-motion="signature-reveal"] .confirmed-about-note-facts { animation-delay:.55s; } [data-about-motion="signature-reveal"] .confirmed-about-note-tags { animation-delay:.7s; } }

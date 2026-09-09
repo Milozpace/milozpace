@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Milozpace 公开版原创示例头像</title><desc id="desc">蓝天、白云、书页与植物构成的抽象圆形插画</desc>
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#83c9e9"/><stop offset="1" stop-color="#e9f5f8"/></linearGradient><clipPath id="c"><circle cx="80" cy="80" r="77"/></clipPath></defs>
+  <g clip-path="url(#c)"><rect width="160" height="160" fill="url(#sky)"/><circle cx="128" cy="31" r="18" fill="#fff2b8" opacity=".8"/><path d="M-8 112c35-33 62-24 88-4 24-25 55-31 89 4v58H-8z" fill="#6b9f83"/><path d="M52 75c14-12 43-11 56 4l-4 37H56z" fill="#f6eee0"/><path d="M80 83v34M57 83c10-5 18-4 23 0 5-4 14-5 24 0" fill="none" stroke="#456f89" stroke-width="3"/><path d="M28 128c14-21 28-27 43-18M133 134c-13-23-27-31-42-18" fill="none" stroke="#466f56" stroke-width="8" stroke-linecap="round"/></g><circle cx="80" cy="80" r="77" fill="none" stroke="#fff" stroke-width="4"/>
+</svg>

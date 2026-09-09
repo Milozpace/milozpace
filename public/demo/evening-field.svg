@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">傍晚的窗</title><desc id="desc">暖色天空和深色原野组成的抽象画面</desc>
+  <defs><linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#58647d"/><stop offset=".55" stop-color="#d89c83"/><stop offset="1" stop-color="#f0c695"/></linearGradient></defs>
+  <rect width="1200" height="720" fill="url(#sunset)"/><circle cx="860" cy="300" r="74" fill="#f7dfb0" opacity=".86"/>
+  <path d="M0 510c210-90 350 25 540-36s360 46 660-16v262H0z" fill="#313d3c"/><path d="M0 600c260-45 420 38 700-22s340 28 500 5v137H0z" fill="#1f2b2a"/>
+  <g stroke="#182321" stroke-width="8"><path d="M180 510v160M240 500v180M1000 470v200"/></g>
+</svg>
